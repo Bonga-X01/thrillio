@@ -55,4 +55,9 @@ public class BookmarkManager {
         userBookmark.setBookMark(bookmark);
         dao.saveBookmark(userBookmark);
     }
+
+    public void setKidFriendlyStatus(String kidFriendlyStatus, Bookmark bookmark) {
+        bookmark.setKidFriendlyStatus(kidFriendlyStatus);
+        System.out.println("Kid-friendly status: " + kidFriendlyStatus + ", " + bookmark);
+    }
 }

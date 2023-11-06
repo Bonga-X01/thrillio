@@ -1,10 +1,12 @@
 package com.semanticSquare.thrillio.entities;
 
 import com.semanticSquare.thrillio.constants.MovieGenre;
+import com.semanticSquare.thrillio.partner.Sharable;
+import org.apache.commons.lang3.StringUtils;
 
 import java.util.Arrays;
 
-public class Movie extends Bookmark{
+public class Movie extends Bookmark implements Sharable {
     private int releaseYear;
     private String[] cast;
     private String[] directors;
@@ -68,5 +70,20 @@ public class Movie extends Bookmark{
             return false;
         }
         return true;
+    }
+
+    @Override
+    public String getItemData() {
+        StringBuilder builder = new StringBuilder();
+        builder.append("<item> ");
+            builder.append("<type> Book </type>");
+            builder.append("<title> ").append(getTitle()).append(" </title>");
+            builder.append("<releaseYear> ").append(releaseYear).append(" </releaseYear>");
+            builder.append("<cast> ").append(StringUtils.join(cast, ",")).append(" </cast>");
+            builder.append("<directors> ").append(StringUtils.join(directors, ",")).append(" </directors>");
+            builder.append("<imdbRating> ").append(imdbRating).append(" </imdbRating>");
+        builder.append(" </item>");
+
+        return builder.toString();
     }
 }
