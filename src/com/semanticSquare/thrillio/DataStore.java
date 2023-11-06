@@ -6,15 +6,15 @@ import com.semanticSquare.thrillio.constants.MovieGenre;
 import com.semanticSquare.thrillio.constants.UserType;
 import com.semanticSquare.thrillio.entities.Bookmark;
 import com.semanticSquare.thrillio.entities.User;
-import com.semanticSquare.thrillio.entities.UserBookMark;
+import com.semanticSquare.thrillio.entities.UserBookmark;
 import com.semanticSquare.thrillio.managers.BookmarkManager;
 import com.semanticSquare.thrillio.managers.UserManager;
 
 public class DataStore {
-    private static final int USER_BOOKMARK_LIMIT = 5;
-    private static final int BOOKMARK_TYPE_COUNT = 3;
-    private static final int BOOKMARK_COUNT_PER_TYPE = 5;
-    private static final int TOTAL_USER_COUNT = 5;
+    public static final int USER_BOOKMARK_LIMIT = 5;
+    public static final int BOOKMARK_TYPE_COUNT = 3;
+    public static final int BOOKMARK_COUNT_PER_TYPE = 5;
+    public static final int TOTAL_USER_COUNT = 5;
 
     public static void loadData() {
         loadUsers();
@@ -54,13 +54,7 @@ public class DataStore {
                         "http://tomcat.apache.org");
     }
     public static void loadMovies() {
-        /*
-        3000	Citizen Kane	1941	Orson Welles,Joseph Cotten	Orson Welles	Classics	8.5	unknown
-        3001	The Grapes of Wrath	1940	Henry Fonda,Jane Darwell	John Ford	Classics	8.2	unknown
-        3002	A Touch of Greatness	2004	Albert Cullum	Leslie Sullivan	Documentaries	7.3	unknown
-        3003	The Big Bang Theory	2007	Kaley Cuoco,Jim Parsons	Chuck Lorre,Bill Prady	TV Shows	8.7	unknown
-        3004	Ikiru	1952	Takashi Shimura,Minoru Chiaki	Akira Kurosawa	Foreign Movies	8.4	unknown
-         */
+
         bookmarks[1][0] = BookmarkManager.getInstance().createMovie(3000,
                 "Citizen Kane,",
                 "",
@@ -156,5 +150,11 @@ public class DataStore {
     public static Bookmark[][] getBookmarks() {
         return bookmarks;
     }
-    private static UserBookMark[] userBookMarks = new UserBookMark[TOTAL_USER_COUNT * USER_BOOKMARK_LIMIT];
+    private static UserBookmark[] userBookmarks = new UserBookmark[TOTAL_USER_COUNT * USER_BOOKMARK_LIMIT];
+    private static int bookmarkIndex;
+
+    public static void add(UserBookmark userBookmark) {
+        userBookmarks[bookmarkIndex] = userBookmark;
+        bookmarkIndex++;
+    }
 }

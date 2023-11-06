@@ -1,5 +1,7 @@
 package com.semanticSquare.thrillio.entities;
 
+import com.semanticSquare.thrillio.constants.BookGenre;
+
 import java.util.Arrays;
 
 public class Book extends Bookmark{
@@ -58,5 +60,13 @@ public class Book extends Bookmark{
                 ", genre='" + genre + '\'' +
                 ", amazonRating=" + amazonRating +
                 '}';
+    }
+
+    @Override
+    public boolean isKidFriendlyEligible() {
+        if (genre.equals(BookGenre.PHILOSOPHY) || genre.equals(BookGenre.SELF_HELP)) {
+            return false;
+        }
+        return true;
     }
 }

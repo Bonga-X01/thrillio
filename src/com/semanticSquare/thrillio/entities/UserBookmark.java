@@ -1,6 +1,6 @@
 package com.semanticSquare.thrillio.entities;
 
-public class UserBookMark {
+public class UserBookmark {
     private User user;
     private Bookmark bookMark;
 

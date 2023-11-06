@@ -1,5 +1,7 @@
 package com.semanticSquare.thrillio.entities;
 
+import com.semanticSquare.thrillio.constants.MovieGenre;
+
 import java.util.Arrays;
 
 public class Movie extends Bookmark{
@@ -58,5 +60,13 @@ public class Movie extends Bookmark{
                 ", genre='" + genre + '\'' +
                 ", imdbRating=" + imdbRating +
                 '}';
+    }
+
+    @Override
+    public boolean isKidFriendlyEligible() {
+        if (genre.equals(MovieGenre.HORROR) || genre.equals(MovieGenre.THRILLERS)) {
+            return false;
+        }
+        return true;
     }
 }

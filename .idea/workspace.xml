@@ -5,23 +5,30 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="1e57de65-d2ca-47c5-b36c-fe278f720a61" name="Changes" comment="First commit">
-      <change afterPath="$PROJECT_DIR$/src/com/semanticSquare/thrillio/DataStore.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/semanticSquare/thrillio/constants/BookGenre.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/semanticSquare/thrillio/constants/Gender.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/semanticSquare/thrillio/constants/MovieGenre.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/semanticSquare/thrillio/constants/UserType.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/semanticSquare/thrillio/dao/BookmarkDao.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/semanticSquare/thrillio/dao/UserDao.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/semanticSquare/thrillio/entities/Book.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/semanticSquare/thrillio/entities/Bookmark.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/semanticSquare/thrillio/entities/Movie.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/semanticSquare/thrillio/entities/User.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/semanticSquare/thrillio/entities/UserBookMark.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/semanticSquare/thrillio/entities/WebLink.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/semanticSquare/thrillio/managers/BookmarkManager.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/semanticSquare/thrillio/managers/UserManager.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/apiguardian-api-1.1.2.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/junit-jupiter-5.8.1.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/junit-jupiter-api-5.8.1.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/junit-jupiter-engine-5.8.1.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/junit-jupiter-params-5.8.1.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/junit-platform-commons-1.8.1.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/junit-platform-engine-1.8.1.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/opentest4j-1.2.0.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/semanticSquare/thrillio/View.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/semanticSquare/thrillio/constants/BookmarkController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/entity/BookTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/entity/MovieTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/entity/WebLinkTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/semanticSquare/thrillio/DataStore.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/semanticSquare/thrillio/DataStore.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/semanticSquare/thrillio/dao/BookmarkDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/semanticSquare/thrillio/dao/BookmarkDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/semanticSquare/thrillio/entities/Book.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/semanticSquare/thrillio/entities/Book.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/semanticSquare/thrillio/entities/Bookmark.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/semanticSquare/thrillio/entities/Bookmark.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/semanticSquare/thrillio/entities/Movie.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/semanticSquare/thrillio/entities/Movie.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/semanticSquare/thrillio/entities/UserBookMark.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/semanticSquare/thrillio/entities/UserBookmark.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/semanticSquare/thrillio/entities/WebLink.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/semanticSquare/thrillio/entities/WebLink.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/semanticSquare/thrillio/managers/BookmarkManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/semanticSquare/thrillio/managers/BookmarkManager.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/thrillio.iml" beforeDir="false" afterPath="$PROJECT_DIR$/thrillio.iml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -32,6 +39,7 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Class" />
+        <option value="JUnit5 Test Class" />
       </list>
     </option>
   </component>
@@ -49,13 +57,32 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Downloaded.Files.Path.Enabled": "true",
+    "Repository.Attach.Annotations": "false",
+    "Repository.Attach.JavaDocs": "false",
+    "Repository.Attach.Sources": "false",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary": "JUnit5",
+    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5": "",
+    "create.test.in.the.same.root": "true"
   }
-}</component>
-  <component name="RunManager">
+}]]></component>
+  <component name="RecentsManager">
+    <key name="CreateTestDialog.Recents.Supers">
+      <recent name="" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Nkosi\Desktop\springSWE\thrillio\src" />
+    </key>
+    <key name="CreateTestDialog.RecentsKey">
+      <recent name="test.entity" />
+      <recent name="com.semanticSquare.thrillio.entities" />
+    </key>
+  </component>
+  <component name="RunManager" selected="JUnit.BookTest.isKidFriendlyEligible">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Main" />
       <module name="thrillio" />
@@ -63,8 +90,59 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="BookTest.isKidFriendlyEligible" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="thrillio" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="test.entity.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="test.entity" />
+      <option name="MAIN_CLASS_NAME" value="test.entity.BookTest" />
+      <option name="METHOD_NAME" value="isKidFriendlyEligible" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="MovieTest.isKidFriendlyEligible" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="thrillio" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="test.entity.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="test.entity" />
+      <option name="MAIN_CLASS_NAME" value="test.entity.MovieTest" />
+      <option name="METHOD_NAME" value="isKidFriendlyEligible" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="WebLinkTest.isKidFriendlyEligible" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="thrillio" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="test.entity.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="test.entity" />
+      <option name="MAIN_CLASS_NAME" value="test.entity.WebLinkTest" />
+      <option name="METHOD_NAME" value="isKidFriendlyEligible" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.BookTest.isKidFriendlyEligible" />
+        <item itemvalue="JUnit.MovieTest.isKidFriendlyEligible" />
+        <item itemvalue="JUnit.WebLinkTest.isKidFriendlyEligible" />
         <item itemvalue="Application.Main" />
       </list>
     </recent_temporary>
