@@ -4,31 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1e57de65-d2ca-47c5-b36c-fe278f720a61" name="Changes" comment="First commit">
-      <change afterPath="$PROJECT_DIR$/lib/apiguardian-api-1.1.2.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/junit-jupiter-5.8.1.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/junit-jupiter-api-5.8.1.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/junit-jupiter-engine-5.8.1.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/junit-jupiter-params-5.8.1.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/junit-platform-commons-1.8.1.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/junit-platform-engine-1.8.1.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/opentest4j-1.2.0.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/semanticSquare/thrillio/View.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/semanticSquare/thrillio/constants/BookmarkController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/entity/BookTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/entity/MovieTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/entity/WebLinkTest.java" afterDir="false" />
+    <list default="true" id="1e57de65-d2ca-47c5-b36c-fe278f720a61" name="Changes" comment="Implementing Kid-Friendly Eligibility Criteria using TDD">
+      <change afterPath="$PROJECT_DIR$/src/com/semanticSquare/thrillio/constants/KidFriendlyStatus.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/semanticSquare/thrillio/DataStore.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/semanticSquare/thrillio/DataStore.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/semanticSquare/thrillio/dao/BookmarkDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/semanticSquare/thrillio/dao/BookmarkDao.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/semanticSquare/thrillio/entities/Book.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/semanticSquare/thrillio/entities/Book.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/semanticSquare/thrillio/View.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/semanticSquare/thrillio/View.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/semanticSquare/thrillio/entities/Bookmark.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/semanticSquare/thrillio/entities/Bookmark.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/semanticSquare/thrillio/entities/Movie.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/semanticSquare/thrillio/entities/Movie.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/semanticSquare/thrillio/entities/UserBookMark.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/semanticSquare/thrillio/entities/UserBookmark.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/semanticSquare/thrillio/entities/WebLink.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/semanticSquare/thrillio/entities/WebLink.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/semanticSquare/thrillio/managers/BookmarkManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/semanticSquare/thrillio/managers/BookmarkManager.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/thrillio.iml" beforeDir="false" afterPath="$PROJECT_DIR$/thrillio.iml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -38,8 +19,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Class" />
         <option value="JUnit5 Test Class" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -82,7 +63,7 @@
       <recent name="com.semanticSquare.thrillio.entities" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.BookTest.isKidFriendlyEligible">
+  <component name="RunManager" selected="Application.Main">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Main" />
       <module name="thrillio" />
@@ -140,10 +121,10 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.Main" />
         <item itemvalue="JUnit.BookTest.isKidFriendlyEligible" />
         <item itemvalue="JUnit.MovieTest.isKidFriendlyEligible" />
         <item itemvalue="JUnit.WebLinkTest.isKidFriendlyEligible" />
-        <item itemvalue="Application.Main" />
       </list>
     </recent_temporary>
   </component>
@@ -163,11 +144,19 @@
       <option name="project" value="LOCAL" />
       <updated>1699005008392</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Implementing Kid-Friendly Eligibility Criteria using TDD">
+      <created>1699253353191</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1699253353191</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="First commit" />
-    <option name="LAST_COMMIT_MESSAGE" value="First commit" />
+    <MESSAGE value="Implementing Kid-Friendly Eligibility Criteria using TDD" />
+    <option name="LAST_COMMIT_MESSAGE" value="Implementing Kid-Friendly Eligibility Criteria using TDD" />
   </component>
 </project>
