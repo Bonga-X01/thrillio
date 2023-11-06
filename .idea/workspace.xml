@@ -4,17 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1e57de65-d2ca-47c5-b36c-fe278f720a61" name="Changes" comment="Marking items as kid-friendly">
-      <change afterPath="$PROJECT_DIR$/src/com/semanticSquare/thrillio/partner/Sharable.java" afterDir="false" />
+    <list default="true" id="1e57de65-d2ca-47c5-b36c-fe278f720a61" name="Changes" comment="Implementing sharable interface">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/semanticSquare/thrillio/View.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/semanticSquare/thrillio/View.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/semanticSquare/thrillio/constants/BookmarkController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/semanticSquare/thrillio/constants/BookmarkController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/semanticSquare/thrillio/constants/KidFriendlyStatus.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/semanticSquare/thrillio/constants/KidFriendlyStatus.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/semanticSquare/thrillio/entities/Book.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/semanticSquare/thrillio/entities/Book.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/semanticSquare/thrillio/entities/Bookmark.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/semanticSquare/thrillio/entities/Bookmark.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/semanticSquare/thrillio/entities/Movie.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/semanticSquare/thrillio/entities/Movie.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/semanticSquare/thrillio/entities/WebLink.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/semanticSquare/thrillio/entities/WebLink.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/semanticSquare/thrillio/managers/BookmarkManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/semanticSquare/thrillio/managers/BookmarkManager.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/thrillio.iml" beforeDir="false" afterPath="$PROJECT_DIR$/thrillio.iml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -169,7 +165,14 @@
       <option name="project" value="LOCAL" />
       <updated>1699256982052</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Implementing sharable interface">
+      <created>1699260160623</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1699260160623</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -177,6 +180,7 @@
     <MESSAGE value="First commit" />
     <MESSAGE value="Implementing Kid-Friendly Eligibility Criteria using TDD" />
     <MESSAGE value="Marking items as kid-friendly" />
-    <option name="LAST_COMMIT_MESSAGE" value="Marking items as kid-friendly" />
+    <MESSAGE value="Implementing sharable interface" />
+    <option name="LAST_COMMIT_MESSAGE" value="Implementing sharable interface" />
   </component>
 </project>

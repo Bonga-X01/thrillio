@@ -6,7 +6,7 @@ import org.apache.commons.lang3.StringUtils;
 
 import java.util.Arrays;
 
-public class Movie extends Bookmark implements Sharable {
+public class Movie extends Bookmark {
     private int releaseYear;
     private String[] cast;
     private String[] directors;
@@ -72,7 +72,7 @@ public class Movie extends Bookmark implements Sharable {
         return true;
     }
 
-    @Override
+    /*@Override
     public String getItemData() {
         StringBuilder builder = new StringBuilder();
         builder.append("<item> ");
@@ -85,5 +85,5 @@ public class Movie extends Bookmark implements Sharable {
         builder.append(" </item>");
 
         return builder.toString();
-    }
+    }*/
 }
