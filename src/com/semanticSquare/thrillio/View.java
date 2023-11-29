@@ -8,13 +8,15 @@ import com.semanticSquare.thrillio.entities.Bookmark;
 import com.semanticSquare.thrillio.entities.User;
 import com.semanticSquare.thrillio.partner.Sharable;
 
+import java.util.List;
+
 public class View {
 
-    public static void browse(User user, Bookmark[][] bookmarks) {
+    public static void browse(User user, List<List<Bookmark>> bookmarks) {
         System.out.println("\n" + user.getEmail() + " is browsing items!");
 
         int bookmarkCount = 0;
-        for(Bookmark[] bookmarkList : bookmarks) {
+        for(List<Bookmark> bookmarkList : bookmarks) {
             for(Bookmark bookmark : bookmarkList) {
                 //bookmarking!!
                 if(bookmarkCount < DataStore.USER_BOOKMARK_LIMIT) {
