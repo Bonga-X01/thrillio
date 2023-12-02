@@ -1,6 +1,7 @@
 package com.semanticSquare.thrillio.managers;
 
 import com.semanticSquare.thrillio.DataStore;
+import com.semanticSquare.thrillio.constants.BookGenre;
 import com.semanticSquare.thrillio.dao.BookmarkDao;
 import com.semanticSquare.thrillio.entities.*;
 import com.semanticSquare.thrillio.util.*;
@@ -29,7 +30,7 @@ public class BookmarkManager {
 
         return movie;
     }
-    public Book createBook(long id, String title, int publicationYear, String publisher, String[] authors, String genre, double amazonRating) {
+    public Book createBook(long id, String title, int publicationYear, String publisher, String[] authors, BookGenre genre, double amazonRating) {
         Book book = new Book();
         book.setId(id);
         book.setTitle(title);
