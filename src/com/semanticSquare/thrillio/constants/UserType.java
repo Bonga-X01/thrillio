@@ -1,9 +1,15 @@
 package com.semanticSquare.thrillio.constants;
 
-public class UserType {
-    private UserType() { }
+public enum UserType {
+    USER("user"),
+    EDITOR("editor"),
+    CHIEF_EDITOR("chiefeditor");
+    private UserType(String name) {
+        this.name = name;
+    }
+    private String name;
 
-    public static final String USER = "user";
-    public static final String EDITOR = "editor";
-    public static final String CHIEF_EDITOR = "chiefeditor";
+    public String getName() {
+        return name;
+    }
 }

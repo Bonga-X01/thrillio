@@ -2,6 +2,8 @@ package com.semanticSquare.thrillio.managers;
 
 import com.semanticSquare.thrillio.DataStore;
 import com.semanticSquare.thrillio.constants.BookGenre;
+import com.semanticSquare.thrillio.constants.KidFriendlyStatus;
+import com.semanticSquare.thrillio.constants.MovieGenre;
 import com.semanticSquare.thrillio.dao.BookmarkDao;
 import com.semanticSquare.thrillio.entities.*;
 import com.semanticSquare.thrillio.util.*;
@@ -17,7 +19,7 @@ public class BookmarkManager {
     public static BookmarkManager getInstance() {
         return instance;
     }
-    public Movie createMovie(long id, String title, String profileUrl, int releaseYear, String[] cast, String[] directors, String genre, double imdbRating) {
+    public Movie createMovie(long id, String title, String profileUrl, int releaseYear, String[] cast, String[] directors, MovieGenre genre, double imdbRating) {
         Movie movie = new Movie();
         movie.setId(id);
         movie.setTitle(title);
@@ -79,7 +81,7 @@ public class BookmarkManager {
         dao.saveBookmark(userBookmark);
     }
 
-    public void setKidFriendlyStatus(User user, String kidFriendlyStatus, Bookmark bookmark) {
+    public void setKidFriendlyStatus(User user, KidFriendlyStatus kidFriendlyStatus, Bookmark bookmark) {
         bookmark.setKidFriendlyStatus(kidFriendlyStatus);
         bookmark.setKidFriendlyMarkedBy(user);
         System.out.println("Kid-friendly status: " + kidFriendlyStatus + ", marked by: " + user.getEmail() + ", " + bookmark);
