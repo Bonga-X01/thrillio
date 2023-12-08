@@ -6,6 +6,15 @@ import org.apache.commons.lang3.StringUtils;
 public class WebLink extends Bookmark implements Sharable {
     private String url;
     private String host;
+    private String htmlPage;
+    private DownloadStatus downloadStatus = DownloadStatus.NOT_ATTEMPTED;
+
+    public enum DownloadStatus {
+        NOT_ATTEMPTED,
+        SUCCESS,
+        FAILED,
+        NOT_ELIGIBLE;
+    }
 
     public String getUrl() {
         return url;
