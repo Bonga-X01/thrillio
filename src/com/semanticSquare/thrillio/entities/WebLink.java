@@ -9,6 +9,22 @@ public class WebLink extends Bookmark implements Sharable {
     private String htmlPage;
     private DownloadStatus downloadStatus = DownloadStatus.NOT_ATTEMPTED;
 
+    public String getHtmlPage() {
+        return htmlPage;
+    }
+
+    public void setHtmlPage(String htmlPage) {
+        this.htmlPage = htmlPage;
+    }
+
+    public DownloadStatus getDownloadStatus() {
+        return downloadStatus;
+    }
+
+    public void setDownloadStatus(DownloadStatus downloadStatus) {
+        this.downloadStatus = downloadStatus;
+    }
+
     public enum DownloadStatus {
         NOT_ATTEMPTED,
         SUCCESS,

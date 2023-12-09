@@ -43,7 +43,7 @@ public class IOUtil {
     }
 
     public static void write(String webpage, long id) {
-        try (BufferedWriter writer = new BufferedWriter(new OutputStreamWriter(new FileOutputStream("\\pages" + String.valueOf(id) + ".html"), "UTF-8"))) {
+        try (BufferedWriter writer = new BufferedWriter(new OutputStreamWriter(new FileOutputStream("src\\pages" + String.valueOf(id) + ".html"), "UTF-8"))) {
             writer.write(webpage);
         } catch (UnsupportedEncodingException e) {
             // TODO Auto-generated catch block

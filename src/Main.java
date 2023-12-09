@@ -1,5 +1,6 @@
 import com.semanticSquare.thrillio.DataStore;
 import com.semanticSquare.thrillio.View;
+import com.semanticSquare.thrillio.bgjobs.WebpageDownloaderTask;
 import com.semanticSquare.thrillio.entities.Book;
 import com.semanticSquare.thrillio.entities.Bookmark;
 import com.semanticSquare.thrillio.entities.User;
@@ -42,6 +43,14 @@ public class Main {
         System.out.println("Hello world!");
         loadData();
         start();
+
+        //background jobs
+        runDownloaderJob();
+    }
+
+    private static void runDownloaderJob() {
+        WebpageDownloaderTask task = new WebpageDownloaderTask(true);
+        (new Thread(task)).start();
     }
 
 }
