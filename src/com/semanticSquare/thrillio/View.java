@@ -27,7 +27,7 @@ public class View {
                     System.out.println("bookmark = " + bookmark);
                     }
                 }
-                if (user.getUserType().equals(UserType.EDITOR) || user.getUserType().equals(UserType.CHIEF_EDITOR)) {
+                /*if (user.getUserType().equals(UserType.EDITOR) || user.getUserType().equals(UserType.CHIEF_EDITOR)) {
 
                     //Mark as kid-friendly
                     if (bookmark.isKidFriendlyEligible() && bookmark.getKidFriendlyStatus().equals(KidFriendlyStatus.UNKNOWN)) {
@@ -44,7 +44,7 @@ public class View {
                             BookmarkController.getInstance().share(user, bookmark);
                         }
                     }
-                }
+                }*/
             }
         }
     }

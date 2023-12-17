@@ -4,10 +4,11 @@ import com.semanticSquare.thrillio.constants.BookGenre;
 import com.semanticSquare.thrillio.constants.Gender;
 import com.semanticSquare.thrillio.constants.MovieGenre;
 import com.semanticSquare.thrillio.constants.UserType;
-import com.semanticSquare.thrillio.entities.*;
+import com.semanticSquare.thrillio.entities.Bookmark;
+import com.semanticSquare.thrillio.entities.User;
+import com.semanticSquare.thrillio.entities.UserBookmark;
 import com.semanticSquare.thrillio.managers.BookmarkManager;
 import com.semanticSquare.thrillio.managers.UserManager;
-import com.semanticSquare.thrillio.util.*;
 
 import java.sql.*;
 import java.util.ArrayList;
@@ -29,37 +30,23 @@ public class DataStore {
 
 
     public static void loadData() {
-        // JDBC URL, username, and password of MySQL server
         String jdbcUrl = "jdbc:mysql://localhost:3306/jid_thrillio";
         String username = "root";
         String password = "mySQL@2001"; /*or mySQL5957*/
 
-        try {
-            // 1. Load the JDBC driver
-            Class.forName("com.mysql.cj.jdbc.Driver");
-
-            // 2. Establish a connection
-            Connection connection = DriverManager.getConnection(jdbcUrl, username, password);
-
-            if (connection != null) {
-                System.out.println("Connected to the database!");
-
-                // Perform database operations here
-
-                try (Statement stm = connection.createStatement()) {
-                    loadUsers(stm);
-                    loadWeblinks(stm);
-                    loadMovies(stm);
-                    loadBooks(stm);
-                }
-
-                // 3. Close the connection when done
-                connection.close();
-                System.out.println("Connection closed.");
-            }
-        } catch (ClassNotFoundException | SQLException e) {
+        try (Connection connection = DriverManager.getConnection(jdbcUrl, username, password);
+             Statement stm = connection.createStatement()) {
+            System.out.println("Connected to the database!");
+            loadUsers(stm);
+            loadWeblinks(stm);
+            loadMovies(stm);
+            loadBooks(stm);
+        } catch (SQLException e) {
             e.printStackTrace();
         }
+
+
+
     }
 
     private static void loadUsers(Statement stmt) throws SQLException {

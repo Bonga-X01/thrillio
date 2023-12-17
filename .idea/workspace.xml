@@ -4,16 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1e57de65-d2ca-47c5-b36c-fe278f720a61" name="Changes" comment="background jobs: downloading webpages concurrently using Executor Framework">
-      <change afterPath="$PROJECT_DIR$/src/pages1.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/pages2.html" afterDir="false" />
+    <list default="true" id="1e57de65-d2ca-47c5-b36c-fe278f720a61" name="Changes" comment="Read data from the Database">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/semanticSquare/thrillio/DataStore.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/semanticSquare/thrillio/DataStore.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/semanticSquare/thrillio/constants/Gender.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/semanticSquare/thrillio/constants/Gender.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/semanticSquare/thrillio/constants/UserType.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/semanticSquare/thrillio/constants/UserType.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/semanticSquare/thrillio/View.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/semanticSquare/thrillio/View.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/semanticSquare/thrillio/dao/BookmarkDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/semanticSquare/thrillio/dao/BookmarkDao.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/thrillio.iml" beforeDir="false" afterPath="$PROJECT_DIR$/thrillio.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages2.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages2.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -236,7 +232,14 @@
       <option name="project" value="LOCAL" />
       <updated>1702112387476</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="Read data from the Database">
+      <created>1702820862964</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1702820862964</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -250,6 +253,7 @@
     <MESSAGE value="Replacing BookGenre constant exporting class with Enum" />
     <MESSAGE value="methods that will be invoked by a background job" />
     <MESSAGE value="background jobs: downloading webpages concurrently using Executor Framework" />
-    <option name="LAST_COMMIT_MESSAGE" value="background jobs: downloading webpages concurrently using Executor Framework" />
+    <MESSAGE value="Read data from the Database" />
+    <option name="LAST_COMMIT_MESSAGE" value="Read data from the Database" />
   </component>
 </project>
