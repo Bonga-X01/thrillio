@@ -36,7 +36,6 @@ public class BookmarkDao {
                 result.add(webLink);
             }
         }
-
         return result;
     }
 }
