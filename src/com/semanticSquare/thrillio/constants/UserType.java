@@ -12,4 +12,18 @@ public enum UserType {
     public String getName() {
         return name;
     }
+    public static String getUserType(int val) {
+
+        String userType = null;
+        if (val == 0) {
+            userType = "USER";
+        } else if (val == 1) {
+            userType = "EDITOR";
+        }
+        else if (val == 2) {
+            userType = "CHIEF_EDITOR";
+        }
+        return userType;
+    }
+
 }

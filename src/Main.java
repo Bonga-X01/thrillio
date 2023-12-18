@@ -1,7 +1,6 @@
 import com.semanticSquare.thrillio.DataStore;
 import com.semanticSquare.thrillio.View;
 import com.semanticSquare.thrillio.bgjobs.WebpageDownloaderTask;
-import com.semanticSquare.thrillio.entities.Book;
 import com.semanticSquare.thrillio.entities.Bookmark;
 import com.semanticSquare.thrillio.entities.User;
 import com.semanticSquare.thrillio.managers.BookmarkManager;
@@ -40,7 +39,7 @@ public class Main {
 
     }
     public static void main(String[] args) {
-        System.out.println("Hello world!");
+
         loadData();
         start();
 
