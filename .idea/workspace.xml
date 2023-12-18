@@ -4,11 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1e57de65-d2ca-47c5-b36c-fe278f720a61" name="Changes" comment="Read data from the Database">
+    <list default="true" id="1e57de65-d2ca-47c5-b36c-fe278f720a61" name="Changes" comment="Saving Bookmarking data via INSERT">
+      <change afterPath="$PROJECT_DIR$/src/com/semanticSquare/thrillio/constants/DatabaseInfo.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/semanticSquare/thrillio/DataStore.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/semanticSquare/thrillio/DataStore.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/semanticSquare/thrillio/View.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/semanticSquare/thrillio/View.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/semanticSquare/thrillio/dao/BookmarkDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/semanticSquare/thrillio/dao/BookmarkDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/semanticSquare/thrillio/managers/BookmarkManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/semanticSquare/thrillio/managers/BookmarkManager.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/pages2.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages2.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -239,7 +240,14 @@
       <option name="project" value="LOCAL" />
       <updated>1702820862964</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="Saving Bookmarking data via INSERT">
+      <created>1702839812833</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1702839812833</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -254,6 +262,7 @@
     <MESSAGE value="methods that will be invoked by a background job" />
     <MESSAGE value="background jobs: downloading webpages concurrently using Executor Framework" />
     <MESSAGE value="Read data from the Database" />
-    <option name="LAST_COMMIT_MESSAGE" value="Read data from the Database" />
+    <MESSAGE value="Saving Bookmarking data via INSERT" />
+    <option name="LAST_COMMIT_MESSAGE" value="Saving Bookmarking data via INSERT" />
   </component>
 </project>

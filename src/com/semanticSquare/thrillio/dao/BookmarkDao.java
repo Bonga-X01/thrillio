@@ -1,6 +1,7 @@
 package com.semanticSquare.thrillio.dao;
 
 import com.semanticSquare.thrillio.DataStore;
+import com.semanticSquare.thrillio.constants.DatabaseInfo;
 import com.semanticSquare.thrillio.entities.*;
 
 import java.sql.Connection;
@@ -76,5 +77,49 @@ public class BookmarkDao {
             }
         }
         return result;
+    }
+
+    public void updateKidFriendlyStatus(Bookmark bookmark) {
+        int kidFriendlyStatus = bookmark.getKidFriendlyStatus().ordinal();
+        long userId = bookmark.getKidFriendlyMarkedBy().getId();
+
+        String tableToUpdate = "Book";
+        if (bookmark instanceof Movie) {
+            tableToUpdate = "Movie";
+        } else if (bookmark instanceof WebLink) {
+            tableToUpdate = "Weblink";
+        }
+
+        try (Connection connection = DriverManager.getConnection(DatabaseInfo.getJdbcUrl(), DatabaseInfo.getUsername(), DatabaseInfo.getPassword());
+             Statement stm = connection.createStatement()) {
+            System.out.println("Connected to the database!");
+            String queryString =
+                    "UPDATE " + tableToUpdate + " SET kid_friendly_status = " + kidFriendlyStatus
+                    + ", kid_friendly_marked_by = " + userId + " WHERE id = " + bookmark.getId();
+            System.out.println(queryString);
+            stm.executeUpdate(queryString);
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
+    }
+
+    public void sharedByInfo(Bookmark bookmark) {
+
+
+        long userId = bookmark.getSharedBy().getId();
+        String tableToUpdate = "Book";
+        if (bookmark instanceof WebLink) {
+            tableToUpdate = "Weblink";
+        }
+        try (Connection connection = DriverManager.getConnection(DatabaseInfo.getJdbcUrl(), DatabaseInfo.getUsername(), DatabaseInfo.getPassword());
+             Statement stm = connection.createStatement()) {
+            System.out.println("Connected to the database!");
+            String queryString =
+                    "UPDATE " + tableToUpdate + " SET shared_by = " + userId  + " WHERE id = " + bookmark.getId();
+            System.out.println(queryString);
+            stm.executeUpdate(queryString);
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
     }
 }
